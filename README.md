@@ -12,6 +12,7 @@
 
 EXAMPLE OUTPUTS
 -------------SIGN IN-------------
+URL : localhost:9000/signin
 RESPONSE HEADERS
 
 X-Security-AuthKey = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiZW1haWwiOiJ0ZXN0NEBleGFtcGxlLmNvbSIsInJvbGVJZCI6MiwiaWF0IjoxNjY3NzU0OTY5LCJleHAiOjE2Njc3NTU1Njl9.DB8hawLZ5bY6yL7H88-34YClHqanqWi27GH5od28N5U
@@ -22,6 +23,7 @@ X-Security-RefreshKey = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiZW1haWw
 }
 
 -------------GET VACCINE-------------
+URL : localhost:9000/vaccine/<id>
 {
     "id": 17,
     "name": "MRR",
@@ -36,6 +38,7 @@ X-Security-RefreshKey = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiZW1haWw
 }
 
 -------------ADD VACCINE-------------
+URL: localhost:9000/vaccine
 {
     "created": "2022-11-06T22:28:14.909Z",
     "modified": "2022-11-06T22:28:14.909Z",
@@ -49,6 +52,7 @@ X-Security-RefreshKey = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiZW1haWw
 }
 
 -------------GET PATIENTS-------------
+URL : localhost:9000/patient
 [
     {
         "id": 2,
@@ -75,6 +79,7 @@ X-Security-RefreshKey = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiZW1haWw
 ]
 
 -------------GET FILTERED PATIENTS-------------
+URL : localhost:9000/patient?nameSearch=lTest&orderBy=email
 [
     {
         "id": 2,
